@@ -1,0 +1,6 @@
+Open,"Series([], Name: Open, dtype: float64)"
+High,"Series([], Name: High, dtype: float64)"
+Low,"Series([], Name: Low, dtype: float64)"
+Close,"Series([], Name: Close, dtype: float64)"
+Adj Close,"Series([], Name: Adj Close, dtype: float64)"
+Volume,"Series([], Name: Volume, dtype: float64)"

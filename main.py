@@ -1,19 +1,34 @@
 import os
-from server import fbChatAPI
+import json
+from dotenv import load_dotenv
+from fbchat import *
 
-# import os
-# from dotenv import load_dotenv
-# from fbchat import Client, log
-# from fbchat.models import *
+from src import stockBot
 
+load_dotenv()
+fb_user_name = os.getenv('FB_USER_NAME')
+fb_password = os.getenv('FB_PASSWORD')
+thread_shreyas = os.getenv('CHAT_SHREYAS_SANE')
+group_moves = os.getenv('CHAT_MOVES')
 
-# print("Starting FB Chat API -------------")
+KNOWN_THREADS = ['2992994787380239',    # $Moves
+                '100000837841366',      # Shreyas
+                '4065354120160807',     # StockBot Test
+                ]
 
-# load_dotenv()
+class CustomClient(Client):
+    def onMessage(self, mid, author_id, message_object, thread_id, thread_type, ts, metadata, msg, **kwargs):
+        msgText = msg['body']
+        # Stockbot
+        # Also, ignore self authorID
+        if(('enas').lower() in msgText.lower() or '@StockBot' in msgText and author_id != 100055918816796):
+            returnMsg = stockBot.processStockbotMsg(msg['body'])
+            Client.sendMessage(self, message=returnMsg, thread_id=thread_id, thread_type=thread_type)
+        else:
+            pass
 
-# fb_user_name = os.getenv('FB_USER_NAME')
-# fb_password = os.getenv('FB_PASSWORD')
+if __name__ == "__main__":
+    load_dotenv()
 
-# # client = Client(email=fb_user_name, password=fb_password, max_tries=1, user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0', session_cookies=None)
-# client = Client(email=fb_user_name, password=fb_password, max_tries=1, session_cookies={})
-
+    client = CustomClient(fb_user_name, fb_password)
+    client.listen()

@@ -1,0 +1,29 @@
+Value,"2020-10
+palmOil                                False
+controversialWeapons                   False
+gambling                               False
+socialScore                            12.98
+nuclear                                False
+furLeather                             False
+alcoholic                              False
+gmo                                    False
+catholic                               False
+socialPercentile                        None
+peerCount                                 55
+governanceScore                        10.18
+environmentPercentile                   None
+animalTesting                          False
+tobacco                                False
+totalEsg                               23.65
+highestControversy                         3
+esgPerformance                      AVG_PERF
+coal                                   False
+pesticides                             False
+adult                                  False
+percentile                             33.05
+peerGroup                Technology Hardware
+smallArms                              False
+environmentScore                        0.49
+governancePercentile                    None
+militaryContract                       False
+Name: Value, dtype: object"

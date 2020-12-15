@@ -1,0 +1,52 @@
+Firm,"Date
+2012-02-09 08:17:00    Canaccord Genuity
+2012-03-08 07:33:00       FBN Securities
+2012-03-13 06:08:00            Jefferies
+2012-03-14 06:13:00       Morgan Stanley
+2012-03-14 08:21:00    Canaccord Genuity
+                             ...        
+2020-10-22 15:49:26        Piper Sandler
+2020-10-30 11:41:26        Raymond James
+2020-11-30 11:47:25         Loop Capital
+2020-12-09 09:49:54              Wedbush
+2020-12-15 16:48:59              Cascend
+Name: Firm, Length: 754, dtype: object"
+To Grade,"Date
+2012-02-09 08:17:00           Buy
+2012-03-08 07:33:00    Outperform
+2012-03-13 06:08:00           Buy
+2012-03-14 06:13:00    Overweight
+2012-03-14 08:21:00           Buy
+                          ...    
+2020-10-22 15:49:26    Overweight
+2020-10-30 11:41:26    Outperform
+2020-11-30 11:47:25           Buy
+2020-12-09 09:49:54    Outperform
+2020-12-15 16:48:59           Buy
+Name: To Grade, Length: 754, dtype: object"
+From Grade,"Date
+2012-02-09 08:17:00        
+2012-03-08 07:33:00        
+2012-03-13 06:08:00        
+2012-03-14 06:13:00        
+2012-03-14 08:21:00        
+                       ... 
+2020-10-22 15:49:26        
+2020-10-30 11:41:26        
+2020-11-30 11:47:25    Hold
+2020-12-09 09:49:54        
+2020-12-15 16:48:59        
+Name: From Grade, Length: 754, dtype: object"
+Action,"Date
+2012-02-09 08:17:00    main
+2012-03-08 07:33:00    main
+2012-03-13 06:08:00    main
+2012-03-14 06:13:00    main
+2012-03-14 08:21:00    main
+                       ... 
+2020-10-22 15:49:26    main
+2020-10-30 11:41:26    main
+2020-11-30 11:47:25      up
+2020-12-09 09:49:54    main
+2020-12-15 16:48:59    main
+Name: Action, Length: 754, dtype: object"

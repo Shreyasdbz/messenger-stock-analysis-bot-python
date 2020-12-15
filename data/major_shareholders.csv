@@ -1,0 +1,10 @@
+0,"0     0.07%
+1    59.71%
+2    59.75%
+3      4474
+Name: 0, dtype: object"
+1,"0          % of Shares Held by All Insider
+1         % of Shares Held by Institutions
+2          % of Float Held by Institutions
+3    Number of Institutions Holding Shares
+Name: 1, dtype: object"

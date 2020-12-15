@@ -1,0 +1,55 @@
+Holder,"0             Vanguard Group, Inc. (The)
+1                         Blackrock Inc.
+2                Berkshire Hathaway, Inc
+3               State Street Corporation
+4                               FMR, LLC
+5          Geode Capital Management, LLC
+6          Price (T.Rowe) Associates Inc
+7             Northern Trust Corporation
+8      Norges Bank Investment Management
+9    Bank Of New York Mellon Corporation
+Name: Holder, dtype: object"
+Shares,"0    1280669129
+1    1069771045
+2     944295554
+3     672444836
+4     346699497
+5     247838449
+6     228869394
+7     210830547
+8     187425092
+9     166053767
+Name: Shares, dtype: int64"
+Date Reported,"0   2020-09-29
+1   2020-09-29
+2   2020-09-29
+3   2020-09-29
+4   2020-09-29
+5   2020-09-29
+6   2020-09-29
+7   2020-09-29
+8   2019-12-30
+9   2020-09-29
+Name: Date Reported, dtype: datetime64[ns]"
+% Out,"0    0.0753
+1    0.0629
+2    0.0555
+3    0.0396
+4    0.0204
+5    0.0146
+6    0.0135
+7    0.0124
+8    0.0110
+9    0.0098
+Name: % Out, dtype: float64"
+Value,"0    148314291829
+1    123890184721
+2    109358868108
+3     77875836457
+4     40151268747
+5     28702170778
+6     26505364519
+7     24416285648
+8     13759344566
+9     19230686756
+Name: Value, dtype: int64"
